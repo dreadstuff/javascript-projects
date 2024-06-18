@@ -36,7 +36,6 @@ console.log("Fuel Mass (kg):", fuelMassKg);
 console.log("Shuttle Mass (kg):", shuttleMassKg);
 console.log("Total Mass (kg):", totalMassKg);
 console.log("Fuel Temperature (Celsius):", fuelTempCelsius + "°C");
-console.log("Fuel Temperature (Celsius): ${fuelTempCelsius} °C");
 console.log("Weather Status:", weatherStatus);
 
 
