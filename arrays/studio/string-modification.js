@@ -20,5 +20,6 @@ if ( numLetters > str.length) {
     console.log("Error Input. Input not accepted. Defaulting to 3.");
 }
 
+
 let modifiedStr = str.slice(numLetters) + str.slice(0, numLetters);
 console.log(`Original: ${str}, Modified: ${modifiedStr}`);
