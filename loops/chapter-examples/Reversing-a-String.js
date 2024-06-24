@@ -1,4 +1,4 @@
-let str = "blue";
+let str = "Purple";
 let reversed = "";
 
 for (let i = 0; i < str.length; i++) {
@@ -6,3 +6,9 @@ for (let i = 0; i < str.length; i++) {
 }
 
 console.log(reversed);
+
+let phrase = "Chili Cook-off";
+
+for (let i = 0; i < phrase.length - 1; i = i + 3) {
+   console.log(phrase[i]);
+}
