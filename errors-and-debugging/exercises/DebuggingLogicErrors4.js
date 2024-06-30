@@ -29,6 +29,8 @@ if (crewStatus && computerStatus === 'green'){
 
 console.log("launchReady = ", launchReady);
 
+//Not correct again, the 'green' if statement is updating the launchready to true, when it should be false
+
 // if (launchReady) {
 //    console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
 //    console.log('Liftoff!');

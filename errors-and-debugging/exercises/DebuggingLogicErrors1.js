@@ -30,3 +30,5 @@ if (launchReady) {
 } else {
    console.log('Launch scrubbed.');
 }
+
+//No, shuttle should not have launched, but launchReady was overwritten as true
