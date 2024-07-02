@@ -1,3 +1,7 @@
+let nums1 = [5, 10, 2, 42];
+let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
+let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+
 function findMinValue(arr){
   let min = arr[0];
   for (i = 0; i < arr.length; i++){
@@ -10,8 +14,30 @@ function findMinValue(arr){
 
 //Create a function with an array of numbers as its parameter. This function will return a new array with the numbers sorted from least to greatest value.
 
+function sortFuncArr(arr) {
+  //define new empty array
+  let sortArr = [];
+  //loop option - nonrecursion (using while)
+  while (arr.length > 0) {
+  //return blank
+  //use findMinValue to find min value in old array - can we add () to end of function?
+  let min = findMinValue(arr);
+  //add min value to new array, remove min value from old array
+  arr.splice(arr.indexOf(min), 1);
+  sortArr.push(min);
+  }
+  //return line
+  return sortArr;
+};
+
+console.log(sortFuncArr(nums1));
+console.log(sortFuncArr(nums2));
+console.log(sortFuncArr(nums3));
+
+
+
 /*Within the function:
-1) Define a new, empty array to hold the final sorted numbers.
+1) Define a new, empty array to hold the final sorted numbers. 
 2) Use the findMinValue function to find the minimum value in the old array.
 3) Add the minimum value to the new array, and remove the minimum value from the old array.
 4) Repeat parts b & c until the old array is empty.
@@ -23,7 +49,6 @@ function findMinValue(arr){
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
  */
 
+
+
 //Sample arrays for testing:
-let nums1 = [5, 10, 2, 42];
-let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
-let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
