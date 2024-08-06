@@ -22,6 +22,11 @@ takeOffButton.addEventListener('click', function() {
 const landButtonID = document.getElementById("landing");
 landButtonID.addEventListener("click", function() {
     window.alert("The shuttle is landing. Landing gear engaged");
+    flightStatusID.innerHTML = "The shuttle has landed.";
+    shuttleBackgroundID.style.background = "green";
+    spaceShuttleHeightID.innerHTML = "0";
+})
 
 
-})})
+
+})
